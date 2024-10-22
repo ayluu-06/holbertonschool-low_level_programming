@@ -12,7 +12,16 @@ int main(void)
 	int numi;
 
 	for (numi = '0'; numi <= '9'; numi++)
+	{
 		putchar(numi);
+
+		if (numi != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+
 	putchar('\n');
 
 	return (0);
