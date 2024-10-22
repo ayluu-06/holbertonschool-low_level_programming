@@ -11,8 +11,9 @@ int main(void)
 {
 	char vari;
 
-	for (vari = 'z'; vari <= 'a'; vari--)
+	for (vari = 'z'; vari >= 'a'; vari--)
 		putchar(vari);
+
 	putchar('\n');
 	return (0);
 }
