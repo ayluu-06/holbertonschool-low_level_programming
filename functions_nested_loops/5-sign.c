@@ -2,16 +2,22 @@
 
 /**
  * print_sign - printing zero
- * Return: 1 if greater, 0 if zero, -1 if less 
+ * Return: 1 if greater, 0 if zero, -1 if less
+ * @n: number
  **/
 
 int print_sign(int n)
 {
-	if (n > 0) {
+	if (n > 0)
+	{
 		return (1);
-	} else if (n == 0) {
+	}
+	else if (n == 0)
+	{
 		return (0);
-	} else {
+	}
+	else
+	{
 		return (-1);
 	}
 }
