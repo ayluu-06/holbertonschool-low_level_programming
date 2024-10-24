@@ -1,19 +1,16 @@
-#include <stdio.h>
-#include "main.c"
+#include "main.h"
 
 /**
- * main - alphabet
+ * print_alphabet - imprimir
  * Return: 0
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char variable;
 
 	for (variable = 'a'; variable <= 'z'; variable++)
-		putchar(variable);
+		_putchar(variable);
 
-	putchar('\n');
-
-	return (0);
+	_putchar('\n');
 }
