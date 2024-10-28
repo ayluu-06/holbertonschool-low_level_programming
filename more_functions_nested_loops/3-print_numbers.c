@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_numbers - prints 0-9
- * @n: variable
+ * print_numbers - prints 0
+ *
  * Return: 0-9
  */
 
@@ -12,6 +12,5 @@ void print_numbers(void)
 
 	for (n = 0; n <= 9; n++)
 		_putchar (n + '0');
-		
 	_putchar ('\n');
 }
