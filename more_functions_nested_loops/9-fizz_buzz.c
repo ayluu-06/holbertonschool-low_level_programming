@@ -16,7 +16,11 @@ int main(void)
 		else if (num % 3 == 0)
 			printf("Fizz ");
 		else if (num % 5 == 0)
-			printf("Buzz ");
+		{
+			printf("Buzz");
+			if (num <= 99)
+				putchar (' ');
+		}
 		else
 			printf("%d ", num);
 	}
