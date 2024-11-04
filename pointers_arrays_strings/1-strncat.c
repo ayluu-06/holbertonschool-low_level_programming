@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * *_strncat - concatenates two strings
+ * _strncat - concatenates two strings
  * @dest: pointer
  * @src: pointer
  * @n: var
+ * Return: concatenates
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -23,5 +24,5 @@ char *_strncat(char *dest, char *src, int n)
 		n--;
 	}
 	*ptr = '\0';
-	return dest;
+	return (dest);
 }
