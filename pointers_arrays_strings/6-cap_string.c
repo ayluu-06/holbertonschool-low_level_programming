@@ -3,16 +3,17 @@
 /**
  * cap_string - cap
  * @str: string
- *
+ * Return: str
  */
 
 char *cap_string(char *str)
 {
 	int uper = 1;
+	int c;
 
-	for(int c = 0; str[c] != '\0'; c++)
-	{	
-		switch(str[c])
+	for (c = 0; str[c] != '\0'; c++)
+	{
+		switch (str[c])
 		{
 			case ',':
 			case ';':
@@ -30,13 +31,13 @@ char *cap_string(char *str)
 				uper = 1;
 				break;
 			default:
-				if (str[c] >= 'a' && str[c] <= 'z' && c)
+				if (str[c] >= 'a' && str[c] <= 'z' && uper)
 				{
 					str[c] = str[c] - 'a' + 'A';
-					uper = 0;
-				break;
 				}
+					uper = 0;
+					break;
 		}
 	}
-	return(str);
+	return (str);
 }
