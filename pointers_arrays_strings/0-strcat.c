@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * *_strcat - concatenates two strings.
+ * _strcat - concatenates two strings
  * @dest: dest
  * @src: source
+ * Return: dest
  */
 
 char *_strcat(char *dest, char *src)
@@ -21,5 +22,5 @@ char *_strcat(char *dest, char *src)
 		src++;
 	}
 	*pt = '\0';
-	return dest;
+	return (dest);
 }
