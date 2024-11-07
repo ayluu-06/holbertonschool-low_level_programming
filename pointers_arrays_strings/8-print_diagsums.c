@@ -2,8 +2,8 @@
 
 /**
  * print_diagsums - prints the sum of the two diagonals of a square
- * @a: 
- *
+ * @a: var
+ * @size: bla
  */
 
 void print_diagsums(int *a, int size)
@@ -20,5 +20,5 @@ void print_diagsums(int *a, int size)
 	{
 		s += a[i];
 	}
-	printf ("%d, %d\n", p, s);
+	printf("%d, %d\n", p, s);
 }
