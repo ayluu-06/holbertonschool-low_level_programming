@@ -16,5 +16,6 @@ int main(int argc, char *argv[] __attribute__((unused)))
 		i++;
 	}
 	printf("%d", i - 1);
+	printf("\n");
 	return (0);
 }
